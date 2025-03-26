@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+  <link rel="shortcut icon" href="/src/img/favicon.png" />
+
+  <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+  <link rel="stylesheet" href="/src/css/all.min.css" />
+
+  <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+  <!-- <link rel="stylesheet" href="/src/css/remixicon.css" /> -->
+
+  <!--  Swiper's CSS -->
+  <link rel="stylesheet" href="/src/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+  <link href="/dist/output.css" rel="stylesheet">
+
+  <title>responsive || burger website</title>
+</head>
+<body>
+  <header class="bg-primaryColor z-10 fixed top-0 left-0 w-full">
+
+
+    <nav class="container  relative h-14 flex justify-between items-center">
+      <!-- premier enfant -->
+      <div>
+        <a href="#" class="text-2xl uppercase font-Oswald">
+          Bur<span class="text-secondaryColor">ger</span>
+        </a>
+      </div>
+
+
+      <!-- deuxieme enfant -->
+      <!-- <div class="nav-menu border-b-4  md:border-none ease-in-out duration-[.7s]  w-full sm:top-[-25vh] md:top-2 z-[1000]  py-1 bg-primaryColor md:bg-transparent   
+       sm:absolute ld:relative  "> -->
+      <div class="nav-menu hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+
+        <!-- les liens -->
+        <ul class=" flex flex-col md:flex-row items-center justify-center gap-4 text-center z-10">
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#home" id="home">Home</a></li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#about" id="about">About Us</a>
+          </li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#menu" id="menu">Menu</a></li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#reviews"
+              id="reviews">Reviews</a>
+          </li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#Contact"
+              id="Contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- l'icon de close -->
+        <!-- <div class="nav-close absolute cursor-pointer md:hidden -top-0 right-8"> -->
+        <div class="nav-close absolute cursor-pointer top-[0.7rem] right-4 text-2xl md:hidden">
+          <i class="fas fa-close"></i>
+        </div>
+
+      </div>
+      <!-- fin du deuxieme enfant -->
+
+      <!-- troisieme enfant -->
+      <div class="flex items-center gap-5">
+        <div class="ml-4 text-xl"><i class="fas fa-moon cursor-pointer"></i></div>
+        <div id="hamburger">
+          <i class="fas fa-bars md:hidden cursor-pointer"></i>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+    <section id="home">
+      <div class="containter flex flex-col items-center gap-10 md:flex-row">
+        <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+          <img src="./img/home-image.png" alt="home image" class="w-60 md:w-full">
+        </div>
+        <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <h1 class="home_title">VENTRE HEUREUX AVEC UN BURGER SAVOUREUX.</h1>
+          <div class="separator mx-auto md:mx-0"></div>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta a voluptate sapiente illo. Dignissimos reiciendis voluptatem voluptas laudantium, fugiat eaque! Est ipsa quasi cumque dicta dolore neque id. Laborum rerum voluptatum fuga fugiat ex, aliquam non, quas odio totam reiciendis nobis reprehenderit accusantium consectetur assumenda? Libero eum officia obcaecati.</p>
+          <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-4">
+            <div class="text-center">
+              <i class="fas fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+              <br />
+              Délicieux
+            </div>
+
+            <div class="text-center">
+              <i class="fas fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+              <br />
+              Frais
+            </div>
+
+            <div class="text-center">
+              <i class="fas fa-solid fa-leaf text-secondaryColor text-4xl"></i>
+              <br />
+              Organique
+            </div>
+
+          </div>
+          <a class="btn btn-primary" href="#">Voir plus</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/src/scripts/main.js"></script>
+</body>
+</html>
