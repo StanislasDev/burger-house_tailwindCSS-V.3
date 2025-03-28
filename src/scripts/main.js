@@ -42,7 +42,7 @@ hamburger.addEventListener("click", () => {
 // hamburger.addEventListener('click', showNavMenu);
 
 /*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
-const tabs = document.querySelectorAll(".tabs_wrap li");
+const tabs = document.querySelectorAll(".tabs_wrap ul li");
 const all = document.querySelectorAll(".item_wrap");
 const foods = document.querySelectorAll(".food");
 const beverages = document.querySelectorAll(".beverage");
