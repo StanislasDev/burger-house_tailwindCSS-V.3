@@ -7,7 +7,7 @@
         @apply scroll-smooth;
     }
     body {
-        @apply text-whiteColor bg-primaryColor tracking-wider font-Oswald;
+        @apply text-whiteColor bg-primaryColor tracking-wider font-Oswald dark:bg-darkColor;
     }
 
     section {
@@ -37,7 +37,7 @@
         @apply text-xl;
     }
     .separator {
-        @apply w-28 h-[2px] bg-secondaryColor;
+        @apply w-28 h-[2px] bg-secondaryColor my-4;
     }
     .paragraph {
         @apply text-paragraphColor text-xs leading-5;
