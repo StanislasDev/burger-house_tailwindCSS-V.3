@@ -27,6 +27,7 @@
     <title>responsive || burger website</title>
   </head>
   <body>
+      <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
     <header class="bg-primaryColor dark:bg-darkColor z-10 fixed top-0 left-0 w-full" id="header">
       <nav class="container relative h-14 flex justify-between items-center">
         <!-- premier enfant -->
@@ -48,7 +49,7 @@
           >
             <li>
               <a
-                class="nav-link hover:text-secondaryColor ease-in duration-200"
+                class="nav-link text-secondaryColor hover:text-secondaryColor ease-in duration-200"
                 href="#home"
                 id="home"
                 >Home</a
@@ -117,10 +118,10 @@
             <img
               src="./img/home-image.png"
               alt="home image"
-              class="w-60 md:w-full"
+              class="home_image w-60 md:w-full"
             />
           </div>
-          <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <div class="home_content text-center md:basis-1/2 md:text-start lg:basis-3/5">
             <h1 class="home_title">VENTRE HEUREUX AVEC UN BURGER SAVOUREUX.</h1>
             <div class="separator mx-auto md:mx-0"></div>
             <p class="paragraph">
@@ -168,7 +169,7 @@
         <div class="container flex flex-col gap-5 md:flex-row">
           <!-- card 1 -->
           <div
-            class="bg-secondaryColor flex py-3 rounded-xl overflow-hidden md:flex-1"
+            class="category_card bg-secondaryColor flex py-3 rounded-xl overflow-hidden md:flex-1"
           >
             <div class="basis-1/3 relative">
               <img
@@ -187,7 +188,7 @@
           </div>
           <!-- card 2 -->
           <div
-            class="bg-redColor flex py-3 rounded-xl overflow-hidden md:flex-1"
+            class="category_card bg-redColor flex py-3 rounded-xl overflow-hidden md:flex-1"
           >
             <div class="basis-1/3 relative">
               <img
@@ -206,7 +207,7 @@
           </div>
           <!-- card 3 -->
           <div
-            class="bg-greenColor flex py-3 rounded-xl overflow-hidden md:flex-1"
+            class="category_card bg-greenColor flex py-3 rounded-xl overflow-hidden md:flex-1"
           >
             <div class="basis-1/3 relative">
               <img
@@ -231,7 +232,7 @@
         <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
           <!-- card 1 -->
           <div
-            class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1"
+            class="promo_card-1 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1"
           >
             <img
               src="img/promo-1.png"
@@ -254,7 +255,7 @@
           </div>
           <!-- card 2 -->
           <div
-            class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1"
+            class="promo_card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1"
           >
             <img
               src="img/promo-2.png"
@@ -281,11 +282,11 @@
       <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
       <section id="about">
         <div class="container flex flex-col gap-5 md:flex-row">
-          <div class="flex-1">
+          <div class="about_img flex-1">
             <img src="img/about.jpg" alt="about image" class="rounded-xl" />
           </div>
 
-          <div class="flex-1">
+          <div class="about_content flex-1">
             <h2 class="section_title">
               TROUVEZ DE LA NOURRITURE ET DES BOISSONS, TOUT-EN-UN SEUL ENDROIT
               POUR VOTRE MEILLEUR GOÛT.
@@ -347,7 +348,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="menu_items">
             <ul
               class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12"
             >
@@ -705,7 +706,7 @@
 
       <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
       <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
-        <div class="container">
+        <div class="customer_review container">
           <div class="max-w-md mx-auto text-center">
             <h2 class="section_title">AVIS CLIENT</h2>
             <div class="separator mx-auto"></div>
@@ -873,7 +874,7 @@
 
       <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
     <footer>
-      <section id="footer">
+      <section class="footer">
         <div class="container">
           <ul class="grid grid-cols-1 items-start gap-5 md:grid-cols-2 lg:grid-cols-4">
             <li class="">
@@ -934,7 +935,7 @@
             </li>
           </ul>
 
-          <div class="flex flex-col items-center border-t border-primaryColorLight dark:bg-darkColorLight py-5 md:flex-row md:justify-between">
+          <div class="flex flex-col items-center border-t border-primaryColorLight dark:border-darkColorLight py-5 md:flex-row md:justify-between">
             <p class="paragraph">Burger Template kit by StanislasDev💀</p>
             <p class="paragraph">Copyright © 2025.</p>
           </div>
